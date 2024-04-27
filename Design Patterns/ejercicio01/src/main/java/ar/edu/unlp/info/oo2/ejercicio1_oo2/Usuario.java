@@ -1,6 +1,7 @@
 package ar.edu.unlp.info.oo2.ejercicio1_oo2;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Usuario {
 	private String screenName;
@@ -40,7 +41,7 @@ public class Usuario {
 	private void purgeTweets(Tweet tw) {
 		this.tweets = this.tweets.stream()
 				.filter(tweet->!(tweet.getTw().equals(tw)))
-				.toList();
+				.collect(Collectors.toList());
 	}
 	
 	public void deleteTweets(List<Tweet> tws) {

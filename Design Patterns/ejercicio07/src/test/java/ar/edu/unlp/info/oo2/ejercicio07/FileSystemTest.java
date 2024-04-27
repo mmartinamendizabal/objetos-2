@@ -1,6 +1,5 @@
 package ar.edu.unlp.info.oo2.ejercicio07;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
